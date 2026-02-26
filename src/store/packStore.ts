@@ -37,7 +37,7 @@ export const usePackStore = create<PackState>((set, get) => ({
 
     for (const id of enabledIds) {
       try {
-        const resp = await fetch(`/data/packs/${id}.json`);
+        const resp = await fetch(`${import.meta.env.BASE_URL}data/packs/${id}.json`);
         if (resp.ok) {
           const pack: ContentPack = await resp.json();
           loaded.push(pack);
