@@ -1,0 +1,12 @@
+{
+  "id": "hotwheels",
+  "label": "Hot Wheels",
+  "emoji": "\ud83d\udd25",
+  "entities": [
+    {"id":"hw:monster_trucks","kind":"hotwheels_line","titlePl":"Monster Trucks","media":{"emoji":"\ud83d\udd25"},"tags":["hotwheels"],"relations":[{"type":"category","value":"du\u017ce ko\u0142a"},{"type":"does","value":"skoki i zderzaki, wielkie opony"}]},
+    {"id":"hw:track_builder","kind":"hotwheels_line","titlePl":"Track Builder","media":{"emoji":"\ud83d\udee4\ufe0f"},"tags":["hotwheels"],"relations":[{"type":"category","value":"tory"},{"type":"does","value":"buduj w\u0142asne tory i p\u0119tle"}]},
+    {"id":"hw:color_shifters","kind":"hotwheels_line","titlePl":"Color Shifters","media":{"emoji":"\ud83c\udfa8"},"tags":["hotwheels"],"relations":[{"type":"category","value":"magia kolor\u00f3w"},{"type":"does","value":"auto zmienia kolor w wodzie"}]},
+    {"id":"hw:id","kind":"hotwheels_line","titlePl":"Hot Wheels id","media":{"emoji":"\ud83d\udcf1"},"tags":["hotwheels"],"relations":[{"type":"category","value":"cyfrowe"},{"type":"does","value":"skanuj autko i \u015bled\u017a na tablecie"}]},
+    {"id":"hw:mario_kart","kind":"hotwheels_line","titlePl":"Mario Kart","media":{"emoji":"\ud83c\udf44"},"tags":["hotwheels"],"relations":[{"type":"category","value":"gra"},{"type":"does","value":"postacie z Mario jako Hot Wheels"}]}
+  ]
+}

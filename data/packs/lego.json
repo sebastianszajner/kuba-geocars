@@ -1,0 +1,14 @@
+{
+  "id": "lego",
+  "label": "LEGO",
+  "emoji": "\ud83e\uddf1",
+  "entities": [
+    {"id":"lego:technic","kind":"lego_theme","titlePl":"LEGO Technic","media":{"emoji":"\u2699\ufe0f"},"tags":["lego"],"relations":[{"type":"category","value":"mechanika"},{"type":"does","value":"budujemy maszyny i przek\u0142adnie"}]},
+    {"id":"lego:city","kind":"lego_theme","titlePl":"LEGO City","media":{"emoji":"\ud83c\udfd9\ufe0f"},"tags":["lego"],"relations":[{"type":"category","value":"miasto"},{"type":"does","value":"auta, policja, stra\u017c, budowa"}]},
+    {"id":"lego:speed_champions","kind":"lego_theme","titlePl":"LEGO Speed Champions","media":{"emoji":"\ud83c\udfce\ufe0f"},"tags":["lego"],"relations":[{"type":"category","value":"wy\u015bcigi"},{"type":"does","value":"prawdziwe auta wy\u015bcigowe z klock\u00f3w"}]},
+    {"id":"lego:creator","kind":"lego_theme","titlePl":"LEGO Creator","media":{"emoji":"\ud83c\udfa8"},"tags":["lego"],"relations":[{"type":"category","value":"kreatywno\u015b\u0107"},{"type":"does","value":"3 w 1 \u2014 buduj na 3 sposoby"}]},
+    {"id":"lego:duplo","kind":"lego_theme","titlePl":"LEGO Duplo","media":{"emoji":"\ud83d\udfe8"},"tags":["lego"],"relations":[{"type":"category","value":"dla najm\u0142odszych"},{"type":"does","value":"du\u017ce klocki, \u0142atwe do z\u0142o\u017cenia"}]},
+    {"id":"lego:ninjago","kind":"lego_theme","titlePl":"LEGO Ninjago","media":{"emoji":"\u2694\ufe0f"},"tags":["lego"],"relations":[{"type":"category","value":"ninja"},{"type":"does","value":"ninja, smoki, walki, spinery"}]},
+    {"id":"lego:friends","kind":"lego_theme","titlePl":"LEGO Friends","media":{"emoji":"\ud83c\udf1f"},"tags":["lego"],"relations":[{"type":"category","value":"przyjaciele"},{"type":"does","value":"domki, zwierz\u0119ta, przygody"}]}
+  ]
+}

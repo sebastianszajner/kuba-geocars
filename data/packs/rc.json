@@ -1,0 +1,13 @@
+{
+  "id": "rc",
+  "label": "RC",
+  "emoji": "\ud83c\udfce\ufe0f",
+  "entities": [
+    {"id":"rc:monster_truck","kind":"rc_model","titlePl":"Monster Truck","media":{"emoji":"\ud83d\uDE9B"},"tags":["rc","teren"],"relations":[{"type":"category","value":"teren"},{"type":"does","value":"du\u017ce ko\u0142a, skacze przez przeszkody"}]},
+    {"id":"rc:buggy","kind":"rc_model","titlePl":"Buggy","media":{"emoji":"\ud83c\udfc1"},"tags":["rc","szybki"],"relations":[{"type":"category","value":"szybki"},{"type":"does","value":"je\u017adzi szybko po p\u0142askim"}]},
+    {"id":"rc:crawler","kind":"rc_model","titlePl":"Crawler","media":{"emoji":"\ud83e\uddd7"},"tags":["rc","wspinaczka"],"relations":[{"type":"category","value":"wspinaczka"},{"type":"does","value":"wolno i mocno wspina si\u0119 po kamieniach"}]},
+    {"id":"rc:drift","kind":"rc_model","titlePl":"Drift Car","media":{"emoji":"\ud83d\udca8"},"tags":["rc","drift"],"relations":[{"type":"category","value":"drift"},{"type":"does","value":"po\u015blizg i kontrolowany skr\u0119t bokiem"}]},
+    {"id":"rc:truggy","kind":"rc_model","titlePl":"Truggy","media":{"emoji":"\ud83d\ude9c"},"tags":["rc","teren"],"relations":[{"type":"category","value":"teren + szybko\u015b\u0107"},{"type":"does","value":"szybki monster truck, du\u017ce skoki"}]},
+    {"id":"rc:short_course","kind":"rc_model","titlePl":"Short Course Truck","media":{"emoji":"\ud83c\udfce\ufe0f"},"tags":["rc"],"relations":[{"type":"category","value":"wy\u015bcigow\u0103"},{"type":"does","value":"wy\u015bcig po torze z zakr\u0119tami i skokami"}]}
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "food",
+  "label": "Jedzenie",
+  "emoji": "\ud83c\udf55",
+  "entities": [
+    {"id":"food:pizza","kind":"food_item","titlePl":"Pizza","media":{"emoji":"\ud83c\udf55"},"tags":["food"],"relations":[{"type":"origin_country","target":"country:italy"}]},
+    {"id":"food:pasta","kind":"food_item","titlePl":"Makaron","media":{"emoji":"\ud83c\udf5d"},"tags":["food"],"relations":[{"type":"origin_country","target":"country:italy"}]},
+    {"id":"food:croissant","kind":"food_item","titlePl":"Croissant","media":{"emoji":"\ud83e\udd50"},"tags":["food"],"relations":[{"type":"origin_country","target":"country:france"}]},
+    {"id":"food:baguette","kind":"food_item","titlePl":"Bagietka","media":{"emoji":"\ud83e\udd56"},"tags":["food"],"relations":[{"type":"origin_country","target":"country:france"}]},
+    {"id":"food:sushi","kind":"food_item","titlePl":"Sushi","media":{"emoji":"\ud83c\udf63"},"tags":["food"],"relations":[{"type":"origin_country","target":"country:japan"}]},
+    {"id":"food:ramen","kind":"food_item","titlePl":"Ramen","media":{"emoji":"\ud83c\udf5c"},"tags":["food"],"relations":[{"type":"origin_country","target":"country:japan"}]},
+    {"id":"food:hamburger","kind":"food_item","titlePl":"Hamburger","media":{"emoji":"\ud83c\udf54"},"tags":["food"],"relations":[{"type":"origin_country","target":"country:usa"}]},
+    {"id":"food:hot_dog","kind":"food_item","titlePl":"Hot dog","media":{"emoji":"\ud83c\udf2d"},"tags":["food"],"relations":[{"type":"origin_country","target":"country:usa"}]},
+    {"id":"food:bratwurst","kind":"food_item","titlePl":"Kie\u0142baska","media":{"emoji":"\ud83c\udf2d"},"tags":["food"],"relations":[{"type":"origin_country","target":"country:germany"}]},
+    {"id":"food:pretzel","kind":"food_item","titlePl":"Precel","media":{"emoji":"\ud83e\udd68"},"tags":["food"],"relations":[{"type":"origin_country","target":"country:germany"}]},
+    {"id":"food:kimchi","kind":"food_item","titlePl":"Kimchi","media":{"emoji":"\ud83e\udd6c"},"tags":["food"],"relations":[{"type":"origin_country","target":"country:south_korea"}]},
+    {"id":"food:paella","kind":"food_item","titlePl":"Paella","media":{"emoji":"\ud83e\udd58"},"tags":["food"],"relations":[{"type":"origin_country","target":"country:spain"}]},
+    {"id":"food:taco","kind":"food_item","titlePl":"Taco","media":{"emoji":"\ud83c\udf2e"},"tags":["food"],"relations":[{"type":"origin_country","target":"country:mexico"}]},
+    {"id":"food:pierogi","kind":"food_item","titlePl":"Pierogi","media":{"emoji":"\ud83e\udd5f"},"tags":["food"],"relations":[{"type":"origin_country","target":"country:poland"}]},
+    {"id":"food:kebab","kind":"food_item","titlePl":"Kebab","media":{"emoji":"\ud83c\udf56"},"tags":["food"],"relations":[{"type":"origin_country","target":"country:turkey"}]},
+    {"id":"food:gyros","kind":"food_item","titlePl":"Gyros","media":{"emoji":"\ud83e\udd59"},"tags":["food"],"relations":[{"type":"origin_country","target":"country:greece"}]},
+    {"id":"food:pad_thai","kind":"food_item","titlePl":"Pad Thai","media":{"emoji":"\ud83c\udf5c"},"tags":["food"],"relations":[{"type":"origin_country","target":"country:thailand"}]}
+  ]
+}
