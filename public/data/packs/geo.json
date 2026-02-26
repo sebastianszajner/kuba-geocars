@@ -1,0 +1,27 @@
+{
+  "id": "geo",
+  "label": "Kraje",
+  "emoji": "\ud83c\udf0d",
+  "entities": [
+    {"id":"country:poland","kind":"country","titlePl":"Polska","media":{"emoji":"\ud83c\uddf5\ud83c\uddf1"},"tags":["europe"],"relations":[]},
+    {"id":"country:japan","kind":"country","titlePl":"Japonia","media":{"emoji":"\ud83c\uddef\ud83c\uddf5"},"tags":["asia"],"relations":[]},
+    {"id":"country:germany","kind":"country","titlePl":"Niemcy","media":{"emoji":"\ud83c\udde9\ud83c\uddea"},"tags":["europe"],"relations":[]},
+    {"id":"country:italy","kind":"country","titlePl":"W\u0142ochy","media":{"emoji":"\ud83c\uddee\ud83c\uddf9"},"tags":["europe"],"relations":[]},
+    {"id":"country:france","kind":"country","titlePl":"Francja","media":{"emoji":"\ud83c\uddeb\ud83c\uddf7"},"tags":["europe"],"relations":[]},
+    {"id":"country:usa","kind":"country","titlePl":"USA","media":{"emoji":"\ud83c\uddfa\ud83c\uddf8"},"tags":["north-america"],"relations":[]},
+    {"id":"country:south_korea","kind":"country","titlePl":"Korea Po\u0142udniowa","media":{"emoji":"\ud83c\uddf0\ud83c\uddf7"},"tags":["asia"],"relations":[]},
+    {"id":"country:czech","kind":"country","titlePl":"Czechy","media":{"emoji":"\ud83c\udde8\ud83c\uddff"},"tags":["europe"],"relations":[]},
+    {"id":"country:spain","kind":"country","titlePl":"Hiszpania","media":{"emoji":"\ud83c\uddea\ud83c\uddf8"},"tags":["europe"],"relations":[]},
+    {"id":"country:sweden","kind":"country","titlePl":"Szwecja","media":{"emoji":"\ud83c\uddf8\ud83c\uddea"},"tags":["europe"],"relations":[]},
+    {"id":"country:uk","kind":"country","titlePl":"Wielka Brytania","media":{"emoji":"\ud83c\uddec\ud83c\udde7"},"tags":["europe"],"relations":[]},
+    {"id":"country:romania","kind":"country","titlePl":"Rumunia","media":{"emoji":"\ud83c\uddf7\ud83c\uddf4"},"tags":["europe"],"relations":[]},
+    {"id":"country:india","kind":"country","titlePl":"Indie","media":{"emoji":"\ud83c\uddee\ud83c\uddf3"},"tags":["asia"],"relations":[]},
+    {"id":"country:china","kind":"country","titlePl":"Chiny","media":{"emoji":"\ud83c\udde8\ud83c\uddf3"},"tags":["asia"],"relations":[]},
+    {"id":"country:russia","kind":"country","titlePl":"Rosja","media":{"emoji":"\ud83c\uddf7\ud83c\uddfa"},"tags":["europe"],"relations":[]},
+    {"id":"country:brazil","kind":"country","titlePl":"Brazylia","media":{"emoji":"\ud83c\udde7\ud83c\uddf7"},"tags":["south-america"],"relations":[]},
+    {"id":"country:mexico","kind":"country","titlePl":"Meksyk","media":{"emoji":"\ud83c\uddf2\ud83c\uddfd"},"tags":["north-america"],"relations":[]},
+    {"id":"country:turkey","kind":"country","titlePl":"Turcja","media":{"emoji":"\ud83c\uddf9\ud83c\uddf7"},"tags":["asia"],"relations":[]},
+    {"id":"country:greece","kind":"country","titlePl":"Grecja","media":{"emoji":"\ud83c\uddec\ud83c\uddf7"},"tags":["europe"],"relations":[]},
+    {"id":"country:thailand","kind":"country","titlePl":"Tajlandia","media":{"emoji":"\ud83c\uddf9\ud83c\udded"},"tags":["asia"],"relations":[]}
+  ]
+}

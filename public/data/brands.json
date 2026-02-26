@@ -1,0 +1,79 @@
+[
+  { "brand": "Toyota", "originCountry": "Japan", "originCountryPl": "Japonia", "flagEmoji": "\ud83c\uddef\ud83c\uddf5", "category": ["mass-market"], "examples": ["Corolla", "Yaris", "RAV4"] },
+  { "brand": "Honda", "originCountry": "Japan", "originCountryPl": "Japonia", "flagEmoji": "\ud83c\uddef\ud83c\uddf5", "category": ["mass-market"], "examples": ["Civic", "Jazz", "CR-V"] },
+  { "brand": "Nissan", "originCountry": "Japan", "originCountryPl": "Japonia", "flagEmoji": "\ud83c\uddef\ud83c\uddf5", "category": ["mass-market"], "examples": ["Qashqai", "Juke", "Leaf"] },
+  { "brand": "Mazda", "originCountry": "Japan", "originCountryPl": "Japonia", "flagEmoji": "\ud83c\uddef\ud83c\uddf5", "category": ["mass-market"], "examples": ["3", "CX-5", "MX-5"] },
+  { "brand": "Subaru", "originCountry": "Japan", "originCountryPl": "Japonia", "flagEmoji": "\ud83c\uddef\ud83c\uddf5", "category": ["mass-market"], "examples": ["Impreza", "Forester", "Outback"] },
+  { "brand": "Suzuki", "originCountry": "Japan", "originCountryPl": "Japonia", "flagEmoji": "\ud83c\uddef\ud83c\uddf5", "category": ["mass-market"], "examples": ["Swift", "Vitara", "Jimny"] },
+  { "brand": "Mitsubishi", "originCountry": "Japan", "originCountryPl": "Japonia", "flagEmoji": "\ud83c\uddef\ud83c\uddf5", "category": ["mass-market"], "examples": ["Outlander", "Eclipse Cross"] },
+  { "brand": "Lexus", "originCountry": "Japan", "originCountryPl": "Japonia", "flagEmoji": "\ud83c\uddef\ud83c\uddf5", "category": ["premium"], "examples": ["NX", "RX", "IS"] },
+
+  { "brand": "BMW", "originCountry": "Germany", "originCountryPl": "Niemcy", "flagEmoji": "\ud83c\udde9\ud83c\uddea", "category": ["premium"], "examples": ["Seria 3", "X5", "i4"] },
+  { "brand": "Mercedes-Benz", "originCountry": "Germany", "originCountryPl": "Niemcy", "flagEmoji": "\ud83c\udde9\ud83c\uddea", "category": ["premium"], "examples": ["Klasa C", "GLE", "EQS"] },
+  { "brand": "Volkswagen", "originCountry": "Germany", "originCountryPl": "Niemcy", "flagEmoji": "\ud83c\udde9\ud83c\uddea", "category": ["mass-market"], "examples": ["Golf", "Tiguan", "Passat"] },
+  { "brand": "Audi", "originCountry": "Germany", "originCountryPl": "Niemcy", "flagEmoji": "\ud83c\udde9\ud83c\uddea", "category": ["premium"], "examples": ["A4", "Q5", "e-tron"] },
+  { "brand": "Porsche", "originCountry": "Germany", "originCountryPl": "Niemcy", "flagEmoji": "\ud83c\udde9\ud83c\uddea", "category": ["luxury", "sport"], "examples": ["911", "Cayenne", "Taycan"] },
+  { "brand": "Opel", "originCountry": "Germany", "originCountryPl": "Niemcy", "flagEmoji": "\ud83c\udde9\ud83c\uddea", "category": ["mass-market"], "examples": ["Corsa", "Astra", "Mokka"] },
+  { "brand": "MINI", "originCountry": "Germany", "originCountryPl": "Niemcy", "flagEmoji": "\ud83c\udde9\ud83c\uddea", "category": ["mass-market"], "examples": ["Cooper", "Countryman"] },
+  { "brand": "Smart", "originCountry": "Germany", "originCountryPl": "Niemcy", "flagEmoji": "\ud83c\udde9\ud83c\uddea", "category": ["mass-market"], "examples": ["ForTwo", "ForFour"] },
+
+  { "brand": "Ford", "originCountry": "United States", "originCountryPl": "USA", "flagEmoji": "\ud83c\uddfa\ud83c\uddf8", "category": ["mass-market"], "examples": ["Focus", "Mustang", "F-150"] },
+  { "brand": "Chevrolet", "originCountry": "United States", "originCountryPl": "USA", "flagEmoji": "\ud83c\uddfa\ud83c\uddf8", "category": ["mass-market"], "examples": ["Camaro", "Corvette", "Silverado"] },
+  { "brand": "Tesla", "originCountry": "United States", "originCountryPl": "USA", "flagEmoji": "\ud83c\uddfa\ud83c\uddf8", "category": ["electric"], "examples": ["Model 3", "Model Y", "Model S"] },
+  { "brand": "Jeep", "originCountry": "United States", "originCountryPl": "USA", "flagEmoji": "\ud83c\uddfa\ud83c\uddf8", "category": ["mass-market", "suv"], "examples": ["Wrangler", "Grand Cherokee"] },
+  { "brand": "Cadillac", "originCountry": "United States", "originCountryPl": "USA", "flagEmoji": "\ud83c\uddfa\ud83c\uddf8", "category": ["luxury"], "examples": ["Escalade", "CT5"] },
+  { "brand": "Dodge", "originCountry": "United States", "originCountryPl": "USA", "flagEmoji": "\ud83c\uddfa\ud83c\uddf8", "category": ["mass-market", "sport"], "examples": ["Challenger", "Charger"] },
+  { "brand": "Chrysler", "originCountry": "United States", "originCountryPl": "USA", "flagEmoji": "\ud83c\uddfa\ud83c\uddf8", "category": ["mass-market"], "examples": ["300", "Pacifica"] },
+  { "brand": "GMC", "originCountry": "United States", "originCountryPl": "USA", "flagEmoji": "\ud83c\uddfa\ud83c\uddf8", "category": ["mass-market", "suv"], "examples": ["Sierra", "Yukon"] },
+  { "brand": "Lincoln", "originCountry": "United States", "originCountryPl": "USA", "flagEmoji": "\ud83c\uddfa\ud83c\uddf8", "category": ["luxury"], "examples": ["Navigator", "Aviator"] },
+  { "brand": "Buick", "originCountry": "United States", "originCountryPl": "USA", "flagEmoji": "\ud83c\uddfa\ud83c\uddf8", "category": ["mass-market"], "examples": ["Enclave", "Encore"] },
+
+  { "brand": "Hyundai", "originCountry": "South Korea", "originCountryPl": "Korea Po\u0142udniowa", "flagEmoji": "\ud83c\uddf0\ud83c\uddf7", "category": ["mass-market"], "examples": ["i30", "Tucson", "Ioniq 5"] },
+  { "brand": "Kia", "originCountry": "South Korea", "originCountryPl": "Korea Po\u0142udniowa", "flagEmoji": "\ud83c\uddf0\ud83c\uddf7", "category": ["mass-market"], "examples": ["Ceed", "Sportage", "EV6"] },
+  { "brand": "Genesis", "originCountry": "South Korea", "originCountryPl": "Korea Po\u0142udniowa", "flagEmoji": "\ud83c\uddf0\ud83c\uddf7", "category": ["luxury"], "examples": ["G80", "GV70"] },
+
+  { "brand": "Renault", "originCountry": "France", "originCountryPl": "Francja", "flagEmoji": "\ud83c\uddeb\ud83c\uddf7", "category": ["mass-market"], "examples": ["Clio", "Megane", "Captur"] },
+  { "brand": "Peugeot", "originCountry": "France", "originCountryPl": "Francja", "flagEmoji": "\ud83c\uddeb\ud83c\uddf7", "category": ["mass-market"], "examples": ["208", "3008", "508"] },
+  { "brand": "Citro\u00ebn", "originCountry": "France", "originCountryPl": "Francja", "flagEmoji": "\ud83c\uddeb\ud83c\uddf7", "category": ["mass-market"], "examples": ["C3", "C5 Aircross"] },
+  { "brand": "DS", "originCountry": "France", "originCountryPl": "Francja", "flagEmoji": "\ud83c\uddeb\ud83c\uddf7", "category": ["premium"], "examples": ["DS 3", "DS 7"] },
+  { "brand": "Bugatti", "originCountry": "France", "originCountryPl": "Francja", "flagEmoji": "\ud83c\uddeb\ud83c\uddf7", "category": ["luxury", "sport"], "examples": ["Chiron", "Veyron"] },
+
+  { "brand": "Fiat", "originCountry": "Italy", "originCountryPl": "W\u0142ochy", "flagEmoji": "\ud83c\uddee\ud83c\uddf9", "category": ["mass-market"], "examples": ["500", "Panda", "Tipo"] },
+  { "brand": "Alfa Romeo", "originCountry": "Italy", "originCountryPl": "W\u0142ochy", "flagEmoji": "\ud83c\uddee\ud83c\uddf9", "category": ["premium", "sport"], "examples": ["Giulia", "Stelvio"] },
+  { "brand": "Ferrari", "originCountry": "Italy", "originCountryPl": "W\u0142ochy", "flagEmoji": "\ud83c\uddee\ud83c\uddf9", "category": ["luxury", "sport"], "examples": ["Roma", "F8 Tributo", "SF90"] },
+  { "brand": "Lamborghini", "originCountry": "Italy", "originCountryPl": "W\u0142ochy", "flagEmoji": "\ud83c\uddee\ud83c\uddf9", "category": ["luxury", "sport"], "examples": ["Hurac\u00e1n", "Urus"] },
+  { "brand": "Maserati", "originCountry": "Italy", "originCountryPl": "W\u0142ochy", "flagEmoji": "\ud83c\uddee\ud83c\uddf9", "category": ["luxury"], "examples": ["Ghibli", "Levante"] },
+  { "brand": "Lancia", "originCountry": "Italy", "originCountryPl": "W\u0142ochy", "flagEmoji": "\ud83c\uddee\ud83c\uddf9", "category": ["mass-market"], "examples": ["Ypsilon"] },
+  { "brand": "Pagani", "originCountry": "Italy", "originCountryPl": "W\u0142ochy", "flagEmoji": "\ud83c\uddee\ud83c\uddf9", "category": ["luxury", "sport"], "examples": ["Huayra", "Zonda"] },
+
+  { "brand": "Jaguar", "originCountry": "United Kingdom", "originCountryPl": "Wielka Brytania", "flagEmoji": "\ud83c\uddec\ud83c\udde7", "category": ["premium"], "examples": ["F-Pace", "XF", "I-Pace"] },
+  { "brand": "Land Rover", "originCountry": "United Kingdom", "originCountryPl": "Wielka Brytania", "flagEmoji": "\ud83c\uddec\ud83c\udde7", "category": ["premium", "suv"], "examples": ["Defender", "Range Rover"] },
+  { "brand": "Bentley", "originCountry": "United Kingdom", "originCountryPl": "Wielka Brytania", "flagEmoji": "\ud83c\uddec\ud83c\udde7", "category": ["luxury"], "examples": ["Continental GT", "Bentayga"] },
+  { "brand": "Rolls-Royce", "originCountry": "United Kingdom", "originCountryPl": "Wielka Brytania", "flagEmoji": "\ud83c\uddec\ud83c\udde7", "category": ["luxury"], "examples": ["Phantom", "Ghost"] },
+  { "brand": "Aston Martin", "originCountry": "United Kingdom", "originCountryPl": "Wielka Brytania", "flagEmoji": "\ud83c\uddec\ud83c\udde7", "category": ["luxury", "sport"], "examples": ["DB11", "Vantage"] },
+  { "brand": "McLaren", "originCountry": "United Kingdom", "originCountryPl": "Wielka Brytania", "flagEmoji": "\ud83c\uddec\ud83c\udde7", "category": ["luxury", "sport"], "examples": ["720S", "Artura"] },
+  { "brand": "Lotus", "originCountry": "United Kingdom", "originCountryPl": "Wielka Brytania", "flagEmoji": "\ud83c\uddec\ud83c\udde7", "category": ["sport"], "examples": ["Emira", "Eletre"] },
+  { "brand": "MG", "originCountry": "United Kingdom", "originCountryPl": "Wielka Brytania", "flagEmoji": "\ud83c\uddec\ud83c\udde7", "category": ["mass-market"], "examples": ["ZS", "MG4"] },
+
+  { "brand": "Volvo", "originCountry": "Sweden", "originCountryPl": "Szwecja", "flagEmoji": "\ud83c\uddf8\ud83c\uddea", "category": ["premium"], "examples": ["XC60", "V60", "EX30"] },
+  { "brand": "Koenigsegg", "originCountry": "Sweden", "originCountryPl": "Szwecja", "flagEmoji": "\ud83c\uddf8\ud83c\uddea", "category": ["luxury", "sport"], "examples": ["Jesko", "Gemera"] },
+
+  { "brand": "\u0160koda", "originCountry": "Czech Republic", "originCountryPl": "Czechy", "flagEmoji": "\ud83c\udde8\ud83c\uddff", "category": ["mass-market"], "examples": ["Octavia", "Kodiaq", "Fabia"] },
+
+  { "brand": "Dacia", "originCountry": "Romania", "originCountryPl": "Rumunia", "flagEmoji": "\ud83c\uddf7\ud83c\uddf4", "category": ["budget"], "examples": ["Duster", "Sandero", "Spring"] },
+
+  { "brand": "SEAT", "originCountry": "Spain", "originCountryPl": "Hiszpania", "flagEmoji": "\ud83c\uddea\ud83c\uddf8", "category": ["mass-market"], "examples": ["Ibiza", "Leon", "Ateca"] },
+  { "brand": "Cupra", "originCountry": "Spain", "originCountryPl": "Hiszpania", "flagEmoji": "\ud83c\uddea\ud83c\uddf8", "category": ["sport"], "examples": ["Born", "Formentor"] },
+
+  { "brand": "Tata", "originCountry": "India", "originCountryPl": "Indie", "flagEmoji": "\ud83c\uddee\ud83c\uddf3", "category": ["mass-market"], "examples": ["Nexon", "Tiago"] },
+  { "brand": "Mahindra", "originCountry": "India", "originCountryPl": "Indie", "flagEmoji": "\ud83c\uddee\ud83c\uddf3", "category": ["mass-market", "suv"], "examples": ["XUV700", "Thar"] },
+
+  { "brand": "BYD", "originCountry": "China", "originCountryPl": "Chiny", "flagEmoji": "\ud83c\udde8\ud83c\uddf3", "category": ["electric"], "examples": ["Atto 3", "Seal", "Tang"] },
+  { "brand": "Geely", "originCountry": "China", "originCountryPl": "Chiny", "flagEmoji": "\ud83c\udde8\ud83c\uddf3", "category": ["mass-market"], "examples": ["Coolray", "Monjaro"] },
+  { "brand": "NIO", "originCountry": "China", "originCountryPl": "Chiny", "flagEmoji": "\ud83c\udde8\ud83c\uddf3", "category": ["electric", "premium"], "examples": ["ET5", "ES6"] },
+  { "brand": "Great Wall", "originCountry": "China", "originCountryPl": "Chiny", "flagEmoji": "\ud83c\udde8\ud83c\uddf3", "category": ["mass-market"], "examples": ["Haval H6", "Ora"] },
+
+  { "brand": "Proton", "originCountry": "Malaysia", "originCountryPl": "Malezja", "flagEmoji": "\ud83c\uddf2\ud83c\uddfe", "category": ["mass-market"], "examples": ["Saga", "X50"] },
+
+  { "brand": "Lada", "originCountry": "Russia", "originCountryPl": "Rosja", "flagEmoji": "\ud83c\uddf7\ud83c\uddfa", "category": ["mass-market"], "examples": ["Niva", "Vesta"] }
+]

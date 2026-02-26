@@ -1,0 +1,13 @@
+{
+  "id": "toys",
+  "label": "Zabawki",
+  "emoji": "\ud83e\uddf8",
+  "entities": [
+    {"id":"toy:hotwheels","kind":"toy_brand","titlePl":"Hot Wheels","media":{"emoji":"\ud83d\ude98"},"tags":["toy_brand"],"relations":[{"type":"category","value":"autka"}]},
+    {"id":"toy:lego","kind":"toy_brand","titlePl":"LEGO","media":{"emoji":"\ud83e\uddf1"},"tags":["toy_brand"],"relations":[{"type":"category","value":"klocki"}]},
+    {"id":"toy:playmobil","kind":"toy_brand","titlePl":"Playmobil","media":{"emoji":"\ud83e\uddd1"},"tags":["toy_brand"],"relations":[{"type":"category","value":"figurki"}]},
+    {"id":"toy:nerf","kind":"toy_brand","titlePl":"Nerf","media":{"emoji":"\ud83d\udd2b"},"tags":["toy_brand"],"relations":[{"type":"category","value":"blasters"}]},
+    {"id":"toy:matchbox","kind":"toy_brand","titlePl":"Matchbox","media":{"emoji":"\ud83d\ude97"},"tags":["toy_brand"],"relations":[{"type":"category","value":"autka"}]},
+    {"id":"toy:bruder","kind":"toy_brand","titlePl":"Bruder","media":{"emoji":"\ud83d\ude9c"},"tags":["toy_brand"],"relations":[{"type":"category","value":"pojazdy du\u017ce"}]}
+  ]
+}
