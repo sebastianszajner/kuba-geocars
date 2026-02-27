@@ -4,6 +4,8 @@ import { COUNTRIES } from '../data/countries';
 import { distanceFromPoland, directionFromPoland } from '../utils/geography';
 import type { CountryMeta } from '../types';
 import { X } from 'lucide-react';
+import FlagImage from './FlagImage';
+import EntityIcon from './EntityIcon';
 
 export default function EntityDetail() {
   const { selectedEntity, setOverlay } = useGameStore();
@@ -27,7 +29,7 @@ export default function EntityDetail() {
     <div className="space-y-4 py-2">
       <div className="flex items-start justify-between">
         <div className="flex items-center gap-3">
-          <span className="text-5xl">{selectedEntity.media.emoji}</span>
+          <EntityIcon emoji={selectedEntity.media.emoji} iconUrl={selectedEntity.media.iconUrl} size="xl" />
           <div>
             <h2 className="text-2xl font-bold">{selectedEntity.titlePl}</h2>
             {category && (
@@ -45,7 +47,7 @@ export default function EntityDetail() {
       {/* Country of origin */}
       {country && (
         <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-xl">
-          <span className="text-3xl">{country.media.emoji}</span>
+          <FlagImage code={countryMeta?.code || ''} fallbackEmoji={country.media.emoji} size="lg" />
           <div>
             <p className="font-bold">{country.titlePl}</p>
             {km && dir && (

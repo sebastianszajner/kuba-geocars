@@ -2,6 +2,7 @@ import { useGameStore } from '../store/gameStore';
 import { getCountryMeta, POLAND } from '../data/countries';
 import { distanceFromPoland, directionFromPoland, cardinalToDeg } from '../utils/geography';
 import { MapPin, Navigation } from 'lucide-react';
+import FlagImage from './FlagImage';
 
 export default function CountryInfo() {
   const selectedCountry = useGameStore((s) => s.selectedCountry);
@@ -34,10 +35,10 @@ export default function CountryInfo() {
   return (
     <div className="py-2">
       <div className="flex items-center gap-3">
-        <span className="text-4xl">{meta.flag}</span>
+        <FlagImage code={meta.code} fallbackEmoji={meta.flag} size="xl" />
         <div>
-          <h3 className="text-lg font-bold leading-tight">{meta.namePl}</h3>
-          <p className="text-xs text-gray-500">{meta.continentPl}</p>
+          <h3 className="text-xl font-bold leading-tight">{meta.namePl}</h3>
+          <p className="text-sm text-gray-500">{meta.continentPl}</p>
         </div>
       </div>
 

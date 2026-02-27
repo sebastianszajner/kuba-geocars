@@ -63,6 +63,7 @@ export interface CountryMeta {
   namePl: string;
   nameEn: string;
   flag: string;
+  code: string;           // ISO 3166-1 alpha-2 (lowercase)
   continent: string;
   continentPl: string;
   lat: number;
@@ -83,6 +84,8 @@ export interface QuizOption {
   id: string;
   label: string;
   emoji: string;
+  iconUrl?: string | null;
+  countryCode?: string;     // ISO alpha-2 for flag images
 }
 
 export interface QuizQuestion {

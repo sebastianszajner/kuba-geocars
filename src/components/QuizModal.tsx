@@ -6,6 +6,8 @@ import { usePackStore } from '../store/packStore';
 import { generateQuestion } from '../utils/quiz';
 import type { QuizQuestion, QuizOption } from '../types';
 import { Check, X } from 'lucide-react';
+import EntityIcon from './EntityIcon';
+import FlagImage from './FlagImage';
 
 export default function QuizModal() {
   const { activeTopic, difficulty, addQuizResult, setOverlay, wrongIds, addWrongId, removeWrongId } = useGameStore();
@@ -95,7 +97,13 @@ export default function QuizModal() {
       {/* Prompt — big emoji + short text */}
       <div className="text-center">
         {question.promptEmoji && (
-          <p className="text-6xl mb-2">{question.promptEmoji}</p>
+          <div className="mb-3 flex justify-center">
+            {question.meta?.promptCode ? (
+              <FlagImage code={question.meta.promptCode} fallbackEmoji={question.promptEmoji} size="xl" />
+            ) : (
+              <EntityIcon emoji={question.promptEmoji} iconUrl={undefined} size="xl" />
+            )}
+          </div>
         )}
         {(question.topic === 'direction') ? (
           <p className="text-lg font-medium">{question.prompt}</p>
@@ -111,10 +119,10 @@ export default function QuizModal() {
           </>
         )}
         {question.meta?.flagA && question.meta?.flagB && (
-          <div className="flex justify-center gap-4 mt-3 text-4xl">
-            <span>{question.meta.flagA}</span>
-            <span className="text-gray-300 text-2xl">vs</span>
-            <span>{question.meta.flagB}</span>
+          <div className="flex justify-center items-center gap-4 mt-3">
+            <FlagImage code={question.meta.codeA || ''} fallbackEmoji={question.meta.flagA} size="lg" />
+            <span className="text-gray-300 text-2xl font-bold">vs</span>
+            <FlagImage code={question.meta.codeB || ''} fallbackEmoji={question.meta.flagB} size="lg" />
           </div>
         )}
       </div>
@@ -140,7 +148,11 @@ export default function QuizModal() {
               disabled={answeredId !== null}
               className={`quiz-option relative flex flex-col items-center gap-1 p-5 rounded-2xl border-2 text-center font-medium transition-all min-h-[80px] ${style}`}
             >
-              <span className="text-3xl">{opt.emoji}</span>
+              {opt.countryCode ? (
+                <FlagImage code={opt.countryCode} fallbackEmoji={opt.emoji} size="lg" />
+              ) : (
+                <EntityIcon emoji={opt.emoji} iconUrl={opt.iconUrl} size="lg" />
+              )}
               <span className="text-sm">{opt.label}</span>
               {answeredId !== null && opt.id === question.correctId && (
                 <Check size={20} className="absolute top-2 right-2 text-green-600" />

@@ -21,8 +21,20 @@ function pickRandomN<T>(arr: T[], n: number, exclude?: T): T[] {
   return shuffle(filtered).slice(0, n);
 }
 
+// Lookup ISO country code from COUNTRIES by Polish name
+function findCountryCode(titlePl: string): string | undefined {
+  const entry = Object.values(COUNTRIES).find((c) => c.namePl === titlePl);
+  return entry?.code;
+}
+
 function entityToOption(e: Entity): QuizOption {
-  return { id: e.id, label: e.titlePl, emoji: e.media.emoji };
+  return {
+    id: e.id,
+    label: e.titlePl,
+    emoji: e.media.emoji,
+    iconUrl: e.media.iconUrl,
+    countryCode: e.kind === 'country' ? findCountryCode(e.titlePl) : undefined,
+  };
 }
 
 // ---- Spaced repetition light ----
@@ -114,6 +126,7 @@ export function generateFlagQuiz(
     promptEmoji: target.media.emoji,
     options,
     correctId: target.id,
+    meta: { promptCode: findCountryCode(target.titlePl) || '' },
   };
 }
 
@@ -147,7 +160,7 @@ export function generateDirectionQuiz(countries: Entity[]): QuizQuestion | null 
     prompt: `Ktory kraj jest ${labels[axis]} od Polski?`,
     options: [a, b].map(entityToOption),
     correctId: correctEntity.id,
-    meta: { flagA: a.media.emoji, flagB: b.media.emoji },
+    meta: { flagA: a.media.emoji, flagB: b.media.emoji, codeA: metaA.code, codeB: metaB.code },
   };
 }
 
