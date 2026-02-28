@@ -11,7 +11,7 @@ import FlagImage from './FlagImage';
 
 export default function QuizModal() {
   const { activeTopic, difficulty, addQuizResult, setOverlay, wrongIds, addWrongId, removeWrongId } = useGameStore();
-  const { sessionEnded, trialsSinceBreak, incrementTrials, setIsOnBreak } = useSessionStore();
+  const { trialsSinceBreak, incrementTrials, setIsOnBreak } = useSessionStore();
   const { settings } = useSettingsStore();
   const { byKind } = usePackStore();
 
@@ -40,7 +40,7 @@ export default function QuizModal() {
   }, [nextQuestion]);
 
   const handleAnswer = (opt: QuizOption) => {
-    if (answeredId !== null || !question || sessionEnded) return;
+    if (answeredId !== null || !question) return;
 
     const correct = opt.id === question.correctId;
     setAnsweredId(opt.id);

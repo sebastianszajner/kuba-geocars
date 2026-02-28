@@ -3,7 +3,6 @@ import { MapContainer, TileLayer, GeoJSON } from 'react-leaflet';
 import type { GeoJsonObject, Feature } from 'geojson';
 import type { Layer, LeafletMouseEvent } from 'leaflet';
 import { useGameStore } from '../store/gameStore';
-import { useSessionStore } from '../store/sessionStore';
 import { usePackStore } from '../store/packStore';
 import { getCountryMeta } from '../data/countries';
 
@@ -37,7 +36,6 @@ export default function WorldMap() {
   const geoJsonRef = useRef<L.GeoJSON | null>(null);
 
   const { selectedCountry, setSelectedCountry, setGeoJsonLoaded, mode, setOverlay } = useGameStore();
-  const { sessionEnded } = useSessionStore();
   const { countriesWithContent } = usePackStore();
 
   const contentCountryNames = new Set(countriesWithContent().map((e) => e.titlePl));
@@ -56,7 +54,6 @@ export default function WorldMap() {
   const onEachFeature = (feature: Feature, layer: Layer) => {
     layer.on({
       click: (e: LeafletMouseEvent) => {
-        if (sessionEnded) return;
         const name = feature.properties?.name ?? '';
         setSelectedCountry(name);
 
