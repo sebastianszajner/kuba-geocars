@@ -5,6 +5,7 @@ import type { Layer, LeafletMouseEvent } from 'leaflet';
 import { useGameStore } from '../store/gameStore';
 import { usePackStore } from '../store/packStore';
 import { getCountryMeta } from '../data/countries';
+import CountryMarkers from './CountryMarkers';
 
 const GEOJSON_URL =
   'https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json';
@@ -112,6 +113,7 @@ export default function WorldMap() {
             key={selectedCountry ?? 'none'}
           />
         )}
+        <CountryMarkers />
       </MapContainer>
 
       {loading && (
