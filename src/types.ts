@@ -5,6 +5,7 @@
 export type EntityKind =
   | 'country'
   | 'car_brand'
+  | 'car_model'
   | 'rc_model'
   | 'lego_theme'
   | 'hotwheels_line'

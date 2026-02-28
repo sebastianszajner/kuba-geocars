@@ -22,6 +22,7 @@ interface PackState {
   relatedToCountry: (countryId: string) => Entity[];
   originCountry: (entity: Entity) => Entity | undefined;
   getRelation: (entity: Entity, type: string) => string | string[] | undefined;
+  modelsForBrand: (brandId: string) => Entity[];
   countriesWithContent: () => Entity[];
 }
 
@@ -76,6 +77,11 @@ export const usePackStore = create<PackState>((set, get) => ({
     const rel = entity.relations.find((r) => r.type === type);
     return rel?.value ?? rel?.target;
   },
+
+  modelsForBrand: (brandId) =>
+    get().allEntities.filter(
+      (e) => e.kind === 'car_model' && e.relations.some((r) => r.type === 'brand' && r.target === brandId),
+    ),
 
   countriesWithContent: () => {
     const countryIds = new Set<string>();
