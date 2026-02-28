@@ -67,7 +67,8 @@ export default function CountryMarkers() {
     return result;
   }, [allEntities]);
 
-  const handleClick = (nameEn: string) => {
+  const handleClick = (nameEn: string, e: L.LeafletMouseEvent) => {
+    L.DomEvent.stopPropagation(e);
     setSelectedCountry(nameEn);
     if (mode !== 'explore') {
       setOverlay('quiz');
@@ -103,7 +104,7 @@ export default function CountryMarkers() {
 
         const icon = L.divIcon({
           html,
-          className: '',
+          className: 'country-marker-icon',
           iconSize: [iconWidth, iconHeight],
           iconAnchor: [iconWidth / 2, iconHeight / 2],
         });
@@ -113,8 +114,10 @@ export default function CountryMarkers() {
             key={m.nameEn}
             position={[m.lat, m.lng]}
             icon={icon}
+            interactive={true}
+            bubblingMouseEvents={false}
             eventHandlers={{
-              click: () => handleClick(m.nameEn),
+              click: (e) => handleClick(m.nameEn, e as L.LeafletMouseEvent),
             }}
           />
         );
