@@ -4,11 +4,15 @@ import BreathBreak from './BreathBreak';
 import SessionEnd from './SessionEnd';
 import ParentMode from './ParentMode';
 import EntityDetail from './EntityDetail';
+import CarFullscreen from './CarFullscreen';
 
 export default function OverlayManager() {
   const { overlay, setOverlay } = useGameStore();
 
   if (overlay === 'none') return null;
+
+  // Car fullscreen renders its own full-viewport overlay
+  if (overlay === 'car-fullscreen') return <CarFullscreen />;
 
   const handleBackdropClick = () => {
     if (overlay === 'quiz' || overlay === 'entity-detail') {

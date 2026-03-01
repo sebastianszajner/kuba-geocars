@@ -128,4 +128,4 @@ export interface ParentSettings {
   breakDurationSec: number;
 }
 
-export type OverlayType = 'none' | 'quiz' | 'break' | 'session-end' | 'parent' | 'entity-detail';
+export type OverlayType = 'none' | 'quiz' | 'break' | 'session-end' | 'parent' | 'entity-detail' | 'car-fullscreen';

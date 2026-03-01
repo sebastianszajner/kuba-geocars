@@ -2,7 +2,7 @@ import { useGameStore } from '../store/gameStore';
 import { usePackStore } from '../store/packStore';
 import { COUNTRIES } from '../data/countries';
 import { distanceFromPoland, directionFromPoland } from '../utils/geography';
-import type { CountryMeta, Entity } from '../types';
+import type { CountryMeta } from '../types';
 import { X } from 'lucide-react';
 import FlagImage from './FlagImage';
 import EntityIcon from './EntityIcon';
@@ -42,8 +42,10 @@ export default function EntityDetail() {
   const category = getRelation(selectedEntity, 'category');
   const does = getRelation(selectedEntity, 'does');
 
-  const handleModelClick = (e: Entity) => {
-    setSelectedEntity(e);
+  const { openCarViewer } = useGameStore();
+
+  const handleModelClick = (clickedModel: typeof models[number]) => {
+    openCarViewer(models, models.findIndex((m) => m.id === clickedModel.id));
   };
 
   const handleBrandClick = () => {

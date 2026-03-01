@@ -37,6 +37,12 @@ interface GameState {
   selectedEntity: Entity | null;
   setSelectedEntity: (e: Entity | null) => void;
 
+  // Car fullscreen viewer
+  carViewerList: Entity[];
+  carViewerIndex: number;
+  openCarViewer: (list: Entity[], index: number) => void;
+  setCarViewerIndex: (i: number) => void;
+
   // GeoJSON loaded
   geoJsonLoaded: boolean;
   setGeoJsonLoaded: (v: boolean) => void;
@@ -77,6 +83,11 @@ export const useGameStore = create<GameState>((set, get) => ({
 
   selectedEntity: null,
   setSelectedEntity: (e) => set({ selectedEntity: e }),
+
+  carViewerList: [],
+  carViewerIndex: 0,
+  openCarViewer: (list, index) => set({ carViewerList: list, carViewerIndex: index, overlay: 'car-fullscreen' }),
+  setCarViewerIndex: (i) => set({ carViewerIndex: i }),
 
   geoJsonLoaded: false,
   setGeoJsonLoaded: (v) => set({ geoJsonLoaded: v }),

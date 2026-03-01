@@ -7,7 +7,7 @@ import EntityIcon from './EntityIcon';
 
 export default function CountryTopics() {
   const selectedCountry = useGameStore((s) => s.selectedCountry);
-  const { setSelectedEntity, setOverlay } = useGameStore();
+  const { setSelectedEntity, setOverlay, openCarViewer } = useGameStore();
   const { relatedToCountry, byKind, modelsForBrand } = usePackStore();
 
   if (!selectedCountry) return null;
@@ -23,11 +23,22 @@ export default function CountryTopics() {
   const cars = relatedToCountry(countryEntity.id).filter((e) => e.kind === 'car_brand');
   const foods = relatedToCountry(countryEntity.id).filter((e) => e.kind === 'food_item').slice(0, 4);
 
+  // Flat list of all car models for this country (for fullscreen viewer navigation)
+  const allModels: Entity[] = [];
+  for (const brand of cars) {
+    allModels.push(...modelsForBrand(brand.id));
+  }
+
   if (cars.length === 0 && foods.length === 0) return null;
 
   const handleEntityClick = (e: Entity) => {
     setSelectedEntity(e);
     setOverlay('entity-detail');
+  };
+
+  const handleModelClick = (model: Entity) => {
+    const idx = allModels.findIndex((m) => m.id === model.id);
+    openCarViewer(allModels, idx >= 0 ? idx : 0);
   };
 
   return (
@@ -59,7 +70,7 @@ export default function CountryTopics() {
                       {models.map((model) => (
                         <button
                           key={model.id}
-                          onClick={() => handleEntityClick(model)}
+                          onClick={() => handleModelClick(model)}
                           className="flex flex-col items-center gap-1 p-1.5 rounded-lg hover:bg-white transition-colors"
                         >
                           <EntityIcon emoji={model.media.emoji} iconUrl={model.media.iconUrl} size="md" />

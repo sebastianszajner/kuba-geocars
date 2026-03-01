@@ -70,3 +70,70 @@ html, body, #root {
 .pill-btn.selected {
   @apply border-geo-accent bg-blue-50 text-geo-accent;
 }
+
+/* =============================================
+   Car Fullscreen Viewer Animations
+   ============================================= */
+
+/* Fullscreen overlay entrance */
+.car-fullscreen-enter {
+  animation: carEnter 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes carEnter {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Title slide-in */
+.car-title-enter {
+  animation: titleSlide 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+}
+@keyframes titleSlide {
+  from { opacity: 0; transform: translateX(-12px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Bottom panel slide-up */
+.car-bottom-enter {
+  animation: bottomEnter 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
+}
+@keyframes bottomEnter {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Slide in from right (next car) */
+.car-slide-in-right {
+  animation: slideRight 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes slideRight {
+  from { opacity: 0.5; transform: translateX(60px) scale(0.95); }
+  to { opacity: 1; transform: translateX(0) scale(1); }
+}
+
+/* Slide in from left (prev car) */
+.car-slide-in-left {
+  animation: slideLeft 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes slideLeft {
+  from { opacity: 0.5; transform: translateX(-60px) scale(0.95); }
+  to { opacity: 1; transform: translateX(0) scale(1); }
+}
+
+/* Fun fact text fade */
+.car-fact-enter {
+  animation: factFade 0.4s ease both;
+}
+@keyframes factFade {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Arrow pulse hint */
+.car-arrow-pulse {
+  animation: arrowHint 2s ease-in-out 1s 2;
+}
+@keyframes arrowHint {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); background: rgba(255,255,255,0.15); }
+}
